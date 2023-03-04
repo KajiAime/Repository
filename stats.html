@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="init.js"></script>
+    <script type="application/json" src="base.json"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div class="titles">Home Page</div>
+    </nav>
+    <div class="refresh">
+        <p>Click here to refresh the page.</p>
+        <button type="button" onclick="getData();" id="refresher">
+            Refresh
+        </button>
+    </div>
+    <div>
+        <table id="balance">
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Income</th>
+                <th>Expenses</th>
+                <th>Balance</th>
+            </tr>
+            <!-- <tr>
+                <td>2022-11-28</td>
+                <td>Creation of platform</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr> -->
+        </table>
+    </div>
+    <div class="inputting">
+        <form>
+            <input type="date" id="date" class="fields">
+            <input type="text" id="desc" placeholder="Provide a description..." class="fields">
+            <input type="number" id="income" placeholder="Income..." class="fields">
+            <input type="number" id="expenses" placeholder="Expenditure..." class="fields">
+        </form>
+        <button id="subm" type="button" onclick="addToTable();">Submit</button>
+    <p>Save your work by clicking here.</p>
+    <button type="button" onclick=""></button>
+    </div>
+</body>
+</html>
